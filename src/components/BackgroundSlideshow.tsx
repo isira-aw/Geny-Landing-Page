@@ -1,56 +1,54 @@
 import React, { useState, useEffect } from 'react';
 
 const backgroundImages = [
-  'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+  'https://i.pinimg.com/736x/3a/51/af/3a51af1c0b64d4cca860cf6b0453b91b.jpg',
   'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  'https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
+  'https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg?cs=srgb&dl=pexels-lennart-wittstock-94105-316681.jpg&fm=jpg',
+  'https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg?semt=ais_hybrid&w=740',
+  'https://i.pinimg.com/736x/23/c3/3e/23c33e3c187499eaf1341dffff5c285c.jpg'
 ];
 
 export const BackgroundSlideshow: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [nextImageIndex, setNextImageIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const nextImageIndex = (currentImageIndex + 1) % backgroundImages.length;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIsTransitioning(true);
-      
       setTimeout(() => {
-        setCurrentImageIndex(nextImageIndex);
-        setNextImageIndex((nextImageIndex + 1) % backgroundImages.length);
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
         setIsTransitioning(false);
-      }, 1000);
-    }, 6000);
+      }, 1); // 1s = must match your CSS transition duration
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [nextImageIndex]);
+  }, [currentImageIndex]);
 
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden h-screen w-screen">
       {/* Current Image */}
       <div
-        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-          isTransitioning ? 'opacity-0' : 'opacity-100'
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform ${
+          isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
         }`}
         style={{
-          backgroundImage: `url(${backgroundImages[currentImageIndex]})`
+          backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
         }}
       />
-      
+
       {/* Next Image */}
       <div
-        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-          isTransitioning ? 'opacity-100' : 'opacity-0'
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform ${
+          isTransitioning ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}
         style={{
-          backgroundImage: `url(${backgroundImages[nextImageIndex]})`
+          backgroundImage: `url(${backgroundImages[nextImageIndex]})`,
         }}
       />
-      
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/20" />
+
+      {/* Optional: dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/30" />
     </div>
   );
 };

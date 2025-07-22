@@ -5,7 +5,7 @@ export const Gallery: React.FC = () => {
   return (
     <div className="space-y-6 animate-slide-in">
       <div className="flex items-center space-x-3 mb-6">
-        <Camera className="w-8 h-8 text-blue-300" />
+        {/* <Camera className="w-8 h-8 text-blue-300" /> */}
         <h1 className="text-3xl md:text-4xl font-bold">Gallery</h1>
       </div>
       

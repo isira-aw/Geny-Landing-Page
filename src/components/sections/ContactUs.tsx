@@ -5,7 +5,7 @@ export const ContactUs: React.FC = () => {
   return (
     <div className="space-y-6 animate-slide-in">
       <div className="flex items-center space-x-3 mb-6">
-        <Mail className="w-8 h-8 text-blue-300" />
+        {/* <Mail className="w-8 h-8 text-blue-300" /> */}
         <h1 className="text-3xl md:text-4xl font-bold">Contact Us</h1>
       </div>
       
@@ -17,11 +17,11 @@ export const ContactUs: React.FC = () => {
       <div className="space-y-4">
         <div className="flex items-center space-x-3">
           <Mail className="w-5 h-5 text-blue-300" />
-          <span className="text-white/90">hello@studio.com</span>
+          <span className="text-white/90">Isira@.com</span>
         </div>
         <div className="flex items-center space-x-3">
           <Phone className="w-5 h-5 text-blue-300" />
-          <span className="text-white/90">+1 (555) 123-4567</span>
+          <span className="text-white/90">+07321321</span>
         </div>
         <div className="flex items-center space-x-3">
           <MapPin className="w-5 h-5 text-blue-300" />

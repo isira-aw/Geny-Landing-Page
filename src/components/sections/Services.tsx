@@ -1,48 +1,45 @@
 import React from 'react';
-import { Zap, Smartphone, Globe, Brush } from 'lucide-react';
 
 export const Services: React.FC = () => {
   return (
     <div className="space-y-6 animate-slide-in">
-      <div className="flex items-center space-x-3 mb-6">
-        <Zap className="w-8 h-8 text-blue-300" />
-        <h1 className="text-3xl md:text-4xl font-bold">Services</h1>
-      </div>
-      
-      <p className="text-lg text-white/90 leading-relaxed">
-        We offer comprehensive digital solutions tailored to elevate your brand 
-        and create exceptional user experiences.
-      </p>
-      
-      <div className="grid grid-cols-1 gap-4">
-        <div className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
-          <div className="flex items-center space-x-3 mb-2">
-            <Globe className="w-5 h-5 text-blue-300" />
-            <h3 className="font-semibold text-white">Web Development</h3>
-          </div>
-          <p className="text-white/80 text-sm">Modern, responsive websites built with cutting-edge technology.</p>
-        </div>
-        
-        <div className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
-          <div className="flex items-center space-x-3 mb-2">
-            <Smartphone className="w-5 h-5 text-blue-300" />
-            <h3 className="font-semibold text-white">Mobile Apps</h3>
-          </div>
-          <p className="text-white/80 text-sm">Native and cross-platform mobile applications.</p>
-        </div>
-        
-        <div className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
-          <div className="flex items-center space-x-3 mb-2">
-            <Brush className="w-5 h-5 text-blue-300" />
-            <h3 className="font-semibold text-white">UI/UX Design</h3>
-          </div>
-          <p className="text-white/80 text-sm">Beautiful, intuitive designs that users love.</p>
-        </div>
-      </div>
-      
-      <button className="mt-8 bg-blue-600/80 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm">
-        Get Started
-      </button>
+      <div className="p-6 text-white bg-transparent">
+  <h2 className="text-2xl font-bold mb-4">Our Custom-Built IoT Device</h2>
+  <p className="mb-4">
+    Our custom-built IoT device is the heart of the system. It collects crucial data directly from your generator,
+    including metrics like RPM, fuel levels, voltage, temperature, and more. Here’s what sets it apart:
+  </p>
+  <ul className="list-disc list-inside mb-6 space-y-2">
+    <li><strong>Real-Time Data Transmission:</strong> Instantly pushes data to the dashboard within milliseconds for live monitoring.</li>
+    <li><strong>Rugged & Waterproof Design:</strong> Engineered for harsh environments with durable, weather-resistant housing.</li>
+    <li><strong>Top Build Quality:</strong> Built with high-grade materials to ensure long-term performance and reliability.</li>
+    <li><strong>Plug & Play Integration:</strong> Easy to install, flexible to adapt with various generator models.</li>
+    <li><strong>Guaranteed Performance:</strong> Backed by strict quality assurance and long-term durability.</li>
+  </ul>
+
+  <h2 className="text-2xl font-bold mb-4">Interactive Monitoring Dashboard</h2>
+  <p className="mb-4">
+    Designed with a clean, modern UI, our web-based dashboard transforms raw generator data into intuitive visuals:
+  </p>
+  <ul className="list-disc list-inside mb-6 space-y-2">
+    <li><strong>Live Monitoring:</strong> View RPM, voltage, fuel levels, battery health, and other vital stats in real time.</li>
+    <li><strong>AI-Powered Analysis:</strong> Detect anomalies, predict battery wear, and provide intelligent recommendations.</li>
+    <li><strong>Remote Control:</strong> Control generator modes like OFF, MAN, AUTO, or TEST directly from the dashboard.</li>
+    <li><strong>Smart Alerts:</strong> Get notified instantly about any critical issues or maintenance needs.</li>
+    <li><strong>Enterprise-Grade Security:</strong> End-to-end encryption and secure authentication keep your data protected.</li>
+  </ul>
+
+  <h2 className="text-2xl font-bold mb-4">Advanced AI Integration</h2>
+  <p className="mb-4">
+    Our system doesn't just monitor—it thinks.
+  </p>
+  <ul className="list-disc list-inside space-y-2">
+    <li><strong>Predict battery degradation or maintenance cycles.</strong></li>
+    <li><strong>Optimize generator performance through machine learning.</strong></li>
+    <li><strong>Automatically flag abnormal behavior before it becomes a problem.</strong></li>
+  </ul>
+</div>
+
     </div>
   );
 };

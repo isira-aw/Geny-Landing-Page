@@ -6,7 +6,7 @@ interface NavigationProps {
   onSectionChange: (section: NavigationItem) => void;
 }
 
-const navigationItems: NavigationItem[] = ['Gallery', 'About Us', 'Services', 'Contact Us'];
+const navigationItems: NavigationItem[] = [ 'Home', 'Gallery', 'About Us','Contact Us'];
 
 export const Navigation: React.FC<NavigationProps> = ({ activeSection, onSectionChange }) => {
   return (
@@ -14,7 +14,7 @@ export const Navigation: React.FC<NavigationProps> = ({ activeSection, onSection
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="text-white font-bold text-xl md:text-2xl tracking-wide">
-            STUDIO
+          Generator Monitoring System
           </div>
           
           <div className="flex space-x-6 md:space-x-8">

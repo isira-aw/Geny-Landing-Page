@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState } from 'react';
 import { Navigation } from './components/Navigation';
 import { BackgroundSlideshow } from './components/BackgroundSlideshow';
 import { ContentBox } from './components/ContentBox';
@@ -7,23 +7,23 @@ import { AboutUs } from './components/sections/AboutUs';
 import { Services } from './components/sections/Services';
 import { ContactUs } from './components/sections/ContactUs';
 
-export type NavigationItem = 'Gallery' | 'About Us' | 'Services' | 'Contact Us';
+export type NavigationItem = 'Home' | 'Gallery' | 'About Us' | 'Contact Us';
 
 function App() {
-  const [activeSection, setActiveSection] = useState<NavigationItem>('Gallery');
+  const [activeSection, setActiveSection] = useState<NavigationItem>('Home');
 
   const renderContent = () => {
     switch (activeSection) {
+      case 'Home':
+        return <Services />;
       case 'Gallery':
         return <Gallery />;
       case 'About Us':
         return <AboutUs />;
-      case 'Services':
-        return <Services />;
       case 'Contact Us':
         return <ContactUs />;
       default:
-        return <Gallery />;
+        return <Services />;
     }
   };
 
