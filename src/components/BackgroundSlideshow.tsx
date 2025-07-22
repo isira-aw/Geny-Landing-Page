@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const backgroundImages = [
-  'https://i.pinimg.com/736x/3a/51/af/3a51af1c0b64d4cca860cf6b0453b91b.jpg',
+  "https://www.whisperpower.com/content/uploads/2021/05/Generator_header_test.png",
   'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
   'https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg?cs=srgb&dl=pexels-lennart-wittstock-94105-316681.jpg&fm=jpg',
   'https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg?semt=ais_hybrid&w=740',
