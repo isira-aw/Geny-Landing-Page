@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const backgroundImages = [
-  "https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Industri%C3%ABle%20dieselgenerator%20en%20controlepaneel.png?raw=true",
-  'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  'https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg?cs=srgb&dl=pexels-lennart-wittstock-94105-316681.jpg&fm=jpg',
-  'https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg?semt=ais_hybrid&w=740',
-  'https://chatgpt.com/s/m_6885e110a1708191b066afe6ae105d1b'
+  "https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Industri%C3%ABle%20dieselgenerator%20en%20controlepaneel.jpg?raw=true",
+  'https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Waterproof%20Enclosure%20with%20Dynamic%20Splash.png?raw=true',
+  'https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Untitled%20778.png?raw=true',
+  'https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Gray%20Junction%20Box%20on%20Dusty%20Ground.png?raw=true'
 ];
 
 export const BackgroundSlideshow: React.FC = () => {
