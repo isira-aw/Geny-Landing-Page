@@ -5,7 +5,7 @@ const backgroundImages = [
   'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
   'https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg?cs=srgb&dl=pexels-lennart-wittstock-94105-316681.jpg&fm=jpg',
   'https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg?semt=ais_hybrid&w=740',
-  'https://i.pinimg.com/736x/23/c3/3e/23c33e3c187499eaf1341dffff5c285c.jpg'
+  'https://chatgpt.com/s/m_6885e110a1708191b066afe6ae105d1b'
 ];
 
 export const BackgroundSlideshow: React.FC = () => {
