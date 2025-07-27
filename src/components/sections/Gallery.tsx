@@ -2,23 +2,23 @@ import React from 'react';
 
 const images = [
   {
-    url: 'https://i.pinimg.com/736x/3a/51/af/3a51af1c0b64d4cca860cf6b0453b91b.jpg',
+    url: 'https://img.freepik.com/free-vector/iot-concept-isometric-icons-cycle-composition_1284-11487.jpg',
     description: 'Rugged outdoor IoT deployment',
   },
   {
-    url: 'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+    url: 'https://img.freepik.com/free-vector/iot-concept-isometric-icons-cycle-composition_1284-11487.jpg',
     description: 'Live dashboard in action',
   },
   {
-    url: 'https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg?cs=srgb&dl=pexels-lennart-wittstock-94105-316681.jpg&fm=jpg',
+    url: 'https://img.freepik.com/free-vector/iot-concept-isometric-icons-cycle-composition_1284-11487.jpg',
     description: 'Installation on industrial generators',
   },
   {
-    url: 'https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg?semt=ais_hybrid&w=740',
+    url: 'https://img.freepik.com/free-vector/iot-concept-isometric-icons-cycle-composition_1284-11487.jpg',
     description: 'AI-powered anomaly detection visuals',
   },
   {
-    url: 'https://i.pinimg.com/736x/23/c3/3e/23c33e3c187499eaf1341dffff5c285c.jpg',
+    url: 'https://img.freepik.com/free-vector/iot-concept-isometric-icons-cycle-composition_1284-11487.jpg',
     description: 'Device and dashboard side-by-side',
   },
 ];
