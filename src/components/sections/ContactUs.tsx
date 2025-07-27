@@ -6,12 +6,11 @@ export const ContactUs: React.FC = () => {
     <div className="space-y-6 animate-slide-in">
       <div className="flex items-center space-x-3 mb-6">
         {/* <Mail className="w-8 h-8 text-blue-300" /> */}
-        <h1 className="text-3xl md:text-4xl font-bold">Contact Us</h1>
+        <h2 className="text-4xl font-bold mb-4 font-mono">Contact Us</h2>
       </div>
       
       <p className="text-lg text-white/90 leading-relaxed">
-        Ready to bring your vision to life? Let's start a conversation about 
-        your next project.
+        Discover how our IoT device can elevate your next project,reach out to us for more details and let's create something amazing together!
       </p>
       
       <div className="space-y-4">

@@ -4,7 +4,7 @@ export const Services: React.FC = () => {
   return (
     <div className="space-y-6 animate-slide-in">
       <div className="p-6 text-white bg-transparent">
-  <h2 className="text-2xl font-bold mb-4">Our Custom-Built IoT Device</h2>
+  <h2 className="text-4xl font-bold mb-4 font-mono">Our Custom-Built IOT Device</h2>
   <p className="mb-4">
     Our custom-built IoT device is the heart of the system. It collects crucial data directly from your generator,
     including metrics like RPM, fuel levels, voltage, temperature, and more. Here’s what sets it apart:
@@ -17,7 +17,7 @@ export const Services: React.FC = () => {
     <li><strong>Guaranteed Performance:</strong> Backed by strict quality assurance and long-term durability.</li>
   </ul>
 
-  <h2 className="text-2xl font-bold mb-4">Interactive Monitoring Dashboard</h2>
+  <h2 className="text-4xl font-bold mb-4 font-mono">Interactive Monitoring Dashboard</h2>
   <p className="mb-4">
     Designed with a clean, modern UI, our web-based dashboard transforms raw generator data into intuitive visuals:
   </p>
@@ -29,7 +29,7 @@ export const Services: React.FC = () => {
     <li><strong>Enterprise-Grade Security:</strong> End-to-end encryption and secure authentication keep your data protected.</li>
   </ul>
 
-  <h2 className="text-2xl font-bold mb-4">Advanced AI Integration</h2>
+  <h2 className="text-4xl font-bold mb-4 font-mono">Advanced AI Integration</h2>
   <p className="mb-4">
     Our system doesn't just monitor—it thinks.
   </p>

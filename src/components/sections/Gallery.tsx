@@ -26,7 +26,7 @@ const images = [
 export const Gallery: React.FC = () => {
   return (
     <div className="space-y-6 animate-slide-in">
-      <h2 className="text-2xl font-bold text-white mb-4">Gallery</h2>
+      <h2 className="text-4xl font-bold mb-4 font-mono">Gallery</h2>
       <div className="flex flex-col space-y-6">
         {images.map((item, index) => (
           <div

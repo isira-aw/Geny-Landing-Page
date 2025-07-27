@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const backgroundImages = [
-  "https://www.whisperpower.com/content/uploads/2021/05/Generator_header_test.png",
+  "https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Industri%C3%ABle%20dieselgenerator%20en%20controlepaneel.png?raw=true",
   'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
   'https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg?cs=srgb&dl=pexels-lennart-wittstock-94105-316681.jpg&fm=jpg',
   'https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg?semt=ais_hybrid&w=740',

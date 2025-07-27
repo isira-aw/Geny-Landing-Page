@@ -6,7 +6,7 @@ export const AboutUs: React.FC = () => {
     <div className="space-y-6 animate-slide-in">
       <div className="flex items-center space-x-3 mb-6">
         {/* <Users className="w-8 h-8 text-blue-300" /> */}
-        <h1 className="text-3xl md:text-4xl font-bold">About Us</h1>
+        <h2 className="text-4xl font-bold mb-4 font-mono">About Us</h2>
       </div>
       
       <p className="text-lg text-white/90 leading-relaxed">
