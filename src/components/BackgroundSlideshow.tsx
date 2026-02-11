@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
+import generatorImg from '../assets/images/Industriële dieselgenerator en controlepaneel.jpg';
+import waterproofImg from '../assets/images/Waterproof Enclosure with Dynamic Splash.png';
+import untitledImg from '../assets/images/Untitled 778.png';
+import junctionBoxImg from '../assets/images/Gray Junction Box on Dusty Ground.png';
+
 const backgroundImages = [
-  "https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Industri%C3%ABle%20dieselgenerator%20en%20controlepaneel.jpg?raw=true",
-  'https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Waterproof%20Enclosure%20with%20Dynamic%20Splash.png?raw=true',
-  'https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Untitled%20778.png?raw=true',
-  'https://github.com/isira-aw/Geny-Landing-Page/blob/main/image/Gray%20Junction%20Box%20on%20Dusty%20Ground.png?raw=true'
+  generatorImg,
+  waterproofImg,
+  untitledImg,
+  junctionBoxImg
 ];
 
 export const BackgroundSlideshow: React.FC = () => {
@@ -28,9 +33,8 @@ export const BackgroundSlideshow: React.FC = () => {
     <div className="absolute inset-0 overflow-hidden h-screen w-screen">
       {/* Current Image */}
       <div
-        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform ${
-          isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
-        }`}
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform ${isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
+          }`}
         style={{
           backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
         }}
@@ -38,9 +42,8 @@ export const BackgroundSlideshow: React.FC = () => {
 
       {/* Next Image */}
       <div
-        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform ${
-          isTransitioning ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-        }`}
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform ${isTransitioning ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+          }`}
         style={{
           backgroundImage: `url(${backgroundImages[nextImageIndex]})`,
         }}

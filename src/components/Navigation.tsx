@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavigationItem } from '../App';
+import { NavigationItem } from '../types';
 
 interface NavigationProps {
   activeSection: NavigationItem;
@@ -29,9 +29,8 @@ export const Navigation: React.FC<NavigationProps> = ({ activeSection, onSection
               <button
                 key={item}
                 onClick={() => onSectionChange(item)}
-                className={`text-white font-medium text-sm md:text-base tracking-wide transition-all duration-300 hover:text-blue-300 hover:scale-110 hover:drop-shadow-lg relative group ${
-                  activeSection === item ? 'text-blue-300' : ''
-                }`}
+                className={`text-white font-medium text-sm md:text-base tracking-wide transition-all duration-300 hover:text-blue-300 hover:scale-110 hover:drop-shadow-lg relative group ${activeSection === item ? 'text-blue-300' : ''
+                  }`}
               >
                 {item}
                 {activeSection === item && (
@@ -76,9 +75,8 @@ export const Navigation: React.FC<NavigationProps> = ({ activeSection, onSection
                   onSectionChange(item);
                   setMobileMenuOpen(false); // Close menu on section change
                 }}
-                className={`w-full text-white font-medium text-lg tracking-wide transition-all duration-300 hover:text-blue-300 hover:scale-110 hover:drop-shadow-lg relative group ${
-                  activeSection === item ? 'text-blue-300' : ''
-                }`}
+                className={`w-full text-white font-medium text-lg tracking-wide transition-all duration-300 hover:text-blue-300 hover:scale-110 hover:drop-shadow-lg relative group ${activeSection === item ? 'text-blue-300' : ''
+                  }`}
               >
                 {item}
                 {activeSection === item && (
